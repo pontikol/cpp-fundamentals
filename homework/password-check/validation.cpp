@@ -7,17 +7,17 @@
 	{
 		switch (test) {
 		case ErrorCode::Ok:
-			return "Haslo jest poprawne";
+			return "Ok";
 		case ErrorCode::PasswordNeedsAtLeastNineCharacters:
-			return "Haslo powinno zawierac conajmniej dziewiec znakow";
+			return "Password needs to have at least nine characters";
 		case ErrorCode::PasswordNeedsAtLeastOneNumber:
-			return "Haslo powinno zawierac conajmniej jedna cyfre";
+			return "Password needs to have at least one number";
 		case ErrorCode::PasswordNeedsAtLeastOneSpecialCharacter:
-			return "Haslo powinno zawierac conajmniej jeden znak specjalny";
+			return "Password needs to have at least one special character";
 		case ErrorCode::PasswordNeedsAtLeastOneUppercaseLetter:
-			return "Haslo powinno zwierac conajmniej jedna duza litere";
+			return "Password needs to have at least one uppercase letter";
 		case ErrorCode::PasswordsDoNotMatch:
-			return "Hasla nie sa takie same";
+			return "Passwords do not match";
 		default:
 			return "Nieznany blad";
 		}
