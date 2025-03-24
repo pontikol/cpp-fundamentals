@@ -17,12 +17,16 @@ void print(std::vector<std::shared_ptr<int>> zab) {
 
 void add10(std::vector<std::shared_ptr<int>>& vec) {
 	for (std::shared_ptr<int> n : vec) {
-		*n += 10;
+		if (n != nullptr) { 
+			*n += 10;
+		}
 	}
 }
 
 void sub10(int * const n) {
-	*n -= 10;
+	if (n != nullptr) {
+		*n -= 10;
+	}
 }
 void sub10(std::vector<std::shared_ptr<int>> vec) {
 	for (std::shared_ptr<int> n : vec) {
